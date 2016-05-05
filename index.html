@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap Grid</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+		<style type="text/css">
+			.form-title { text-align: center;  }
+			.error-message { color: #FF3F3A; }
+		</style>
+	</head>
+<body>
+
+	<div class="container">
+
+		<div class="row col-md-offset-3 col-md-6">
+
+	    	<form id="form" role="form" action="" method="POST" enctype="multipart/form-data">
+
+	    		<div class="form-title">
+	    			<h2>Registration Form </h2>
+	    		</div>
+
+	    		<hr />
+
+	    		<div class="form-group">
+		            <label class="control-label" for="username">
+		                <span class="" id="">Username: </span>
+		            </label>
+		            <!--<span class="help-block">This is a sample help block</span>-->
+		            <input type="text" class="form-control input-sm" name="username"/>
+		        </div>
+
+		        <div class="form-group">
+		            <label class="" for="email">
+		                <span class="" id="">Email: </span>
+		            </label>
+		            <input type="text" class="form-control input-sm" name="email"/>
+		        </div>
+
+		        <div class="form-group">
+		            <label class="" for="password">
+		                <span class="" id="">Password: </span>
+		            </label>
+		            <input type="password" class="form-control input-sm" id="password" name="password"/>
+		        </div>
+
+		        <div class="form-group">
+		            <label class="" for="confirm_password">
+		                <span class="" id="">Confirm Password: </span>
+		            </label>
+		            <input type="password" class="form-control input-sm" name="confirm_password"/>
+		        </div>
+
+		        <div class="form-group">
+	                <div class="controls">
+		                <label class="checkbox-inline"><input type="checkbox" name="agreement">By signing up, I agree to the <a href="#" target="">Terms &amp; Conditions</a></label>
+		            </div>
+	            </div>
+
+		        <a href="http://brianmatovu.com/web-forms-validation-submission-and-processing/" target="_blank">
+	            	<input type="button" class="btn btn-success pull-left" value="Read Tutorial"/>
+	            </a>
+		        <input type="button" class="btn btn-primary pull-right" id="submit" name="submit" value="Register"/>
+
+		    </form>
+
+		</div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+	<script src="assets/js/script.min.js"></script>
+	
+</body>
+</html>
